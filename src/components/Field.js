@@ -6,13 +6,13 @@ class Field extends React.Component {
 
   render() {
     const text = (
-      this.context === 'english' ? 'Name' : // if
-      this.context === 'dutch' ? 'Naam' : // else if
-      this.context === 'bulgarian' ? 'име' : // else if
-      this.context === 'korean' ? '이름' : // else if
-      this.context === 'russian' ? 'название' : // else if
-      this.context === 'chinese' ? '名字' : // else if
-      this.context === 'spanish' ? 'Nombre' : // else if
+      this.context.language === 'english' ? 'Name' : // if
+      this.context.language === 'dutch' ? 'Naam' : // else if
+      this.context.language === 'bulgarian' ? 'име' : // else if
+      this.context.language === 'korean' ? '이름' : // else if
+      this.context.language === 'russian' ? 'название' : // else if
+      this.context.language === 'chinese' ? '名字' : // else if
+      this.context.language === 'spanish' ? 'Nombre' : // else if
       null // else
     );
 
